@@ -1,0 +1,205 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #E9ECF8;
+}
+
+header{
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+
+.formulario{
+    display: inline-block;
+    margin: 3% 0 0 10%;
+    width: 800px;
+}
+
+textarea {
+    resize: none;
+    display: flex;
+    align-items: center;
+    user-select: none;
+}
+
+textarea:focus {
+    outline: none;
+  }
+  
+
+.formulario textarea{
+    width: 100%;
+    height: 500px;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 28px;
+    background-color: #E9ECF8;
+    color: #072B61;
+}
+
+.resultado {
+    display:inline-block;
+    position: absolute;
+    right: 35px;
+    top: 30px;
+}
+
+.resultado textarea {
+    width: 350px;
+    height: 700px;
+    padding: 10px;
+    margin-left: 100px;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    color: #072B61;
+    box-shadow: 6px 6px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.resultado textarea:hover{
+    cursor: default;
+}
+
+.botones {
+    display: inline-block;
+}
+
+.atention {
+    margin: 20px 0 10px 150px;
+}
+
+.atention p {
+    display: inline;
+    color: #495057;
+    vertical-align: top;
+    font-size: 14px;
+}
+
+button {
+    padding: 15px 30px;
+    cursor: pointer;
+    border: 1px solid #052051;
+    border-radius: 15px;
+    width: 250px;
+    font-size: 20px;
+}
+
+#encriptar {
+    background-color: #072B61;
+    color: #DDDDDD;
+    margin-left: 150px;
+    transition: 400ms;
+}
+
+#encriptar:hover{
+    background-color: #052051;
+}
+
+#desencriptar, #copiar{
+    background-color: #FFFFFF;
+    margin-left: 10px;
+    transition: 400ms;
+}
+
+#desencriptar:hover, #copiar:hover{
+    background-color: #CED4DA;
+}
+
+#copiar {
+    position: absolute;
+    right: 55px;
+    top: 650px;
+}
+
+/*INNER CONTENT RESULTADO*/
+
+.resultado img {
+    position: absolute;
+    top: 150px;
+    right: 57px;
+    width: 250px;
+}
+
+.resultado h2 {
+    position: absolute;
+    right: 85px;
+    top: 400px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 200px;
+    text-align: center;
+    color: #072B61;
+}
+
+.resultado p {
+    position: absolute;
+    right: 35px;
+    top: 450px;
+    font-size: 14px;
+    width: 300px;
+    text-align: center;
+    color: #052051;
+}
+
+@media only screen and (max-width: 1200px) {
+    main {
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+
+    .formulario{
+        width: 100%;
+        margin: 0;
+    }
+    #texto-encriptar, #texto-resultado{
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+        text-align: center;
+        padding: 0;
+    }
+
+    .atention {
+        margin: 0 0 0 25%;
+    }
+
+    .botones {
+        margin: 0 0 0 18%;
+    }
+
+    #encriptar{
+        margin: 10px 0 10px 0;
+    }
+    
+    #desencriptar {
+        margin: auto;
+    }
+
+    .resultado {
+        display: block;
+        position: static;
+        margin: 5% 0 0 0;
+    }
+
+    #texto-resultado {
+        margin: 0;
+    }
+
+    .resultado h2 {
+        position: static;
+        margin: 0 auto;
+    }
+
+    .resultado p {
+        position: static;
+        margin: 0 auto;
+    }
+
+    #copiar {
+        position: static;
+        margin: 10px 20% 0;
+    }
+}
+  

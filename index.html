@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header>
+        <img src="images/Logo.png" alt="Logotipo del encriptador">
+    </header>
+    <main>
+        <section class="formulario">
+            <textarea name="texto-encriptar" id="texto-encriptar" rows="10" placeholder="Inserte el texto aquí"></textarea>
+            <div class="atention">
+                <img src="images/bi_exclamation-circle-fill.png" alt="Signo de exclamacion">
+                <p id="error">Sin caracteres especiales</p>
+            </div>
+            <div class="botones">
+                <button id="encriptar" onclick="encriptar()">Encriptar</button>
+                <button id="desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+        <section class="resultado">
+            <textarea name="texto-resultado" id="texto-resultado" rows="10"></textarea>
+            <img src="images/Muñeco.png" alt="Guy searching something" id="boyImage">
+            <h2 id="headingResultado">Ningún mensaje fue encontrado</h2>
+            <p id="pResultado">Ingresa el texto que desees encriptar o desencriptar</p>
+            <button id="copiar" onclick="copiarAlPortapapeles()">Copiar</button>
+        </section>
+    </main> 
+    <script src="script.js"></script>
+</body>
+</html>
